@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+.card {
+    color: white;
+    border-radius: 8px;
+    display: block;
+    margin: 10px;
+    position: relative;
+    align-items: center;
+    /* width: 260px; */
+    background: linear-gradient(315deg, #2b2b2b, #333333);
+}
+
+.main-content {
+    text-align: -webkit-center;
+}
+
+.card-content {
+    margin: 24px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.card-title {
+    margin-block-end: 0px;
+    color: var(--text-color);
+    padding: 24px;
+}
+
+.divButton {
+    background: white;
+    color: black;
+    border-radius: 20px;
+    padding: 8px 32px 8px 32px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+
+/*
+Gradients from https://uigradients.com
+*/
+.hydrogen-card {
+    /* background-color: #000000;
+    background-image: linear-gradient(387deg, #000000 0%, #414141 100%); */
+    background: rgb(0 0 0 / 73%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-color: #414141;
+    border-width: 1.5px;
+}
+
+.chip {
+    border-color: #707070;
+    border-width: 1.5px !important;
+    border-style: solid;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 2px;
+}
+
+.wind-icon {
+    fill: #AAAAAA;
+    height: 16px;
+    width: 16px;
+}
+
+.wind-value {
+    font-size: 0.8rem;
+    display: inline-flex;
+    margin-left: 16px;
+}
+
+.humidity-icon {
+    fill: #AAAAAA;
+    height: 16px;
+    width: 16px;
+}
+
+.humidity-value {
+    font-size: 0.9rem;
+    display: inline-flex;
+}
+
+.sun-icon {
+    fill: #AAAAAA;
+    height: 16px;
+    width: 16px;
+}
+
+.sun-value {
+    font-size: 0.8rem;
+    display: inline-flex;
+    margin-left: 16px;
+}
+
+.temperature {
+    font-size: 4rem;
+    text-align: end;
+}
+
+.rain-icon {
+    height: 100px;
+    width: 100px;
+    cursor: pointer
+}
+
+.icon-vgradient {
+    fill: url(#gradient-vertical);
+}
+
+.icon-vgradient-rain {
+    fill: url(#gradient-vertical-rain);
+}
+
+#gradient-vertical-rain {
+    --color-stop-1: #56ccf2;
+    --color-stop-2: #2f80ed;
+}
+
+.icon-vgradient-sunny {
+    fill: url(#gradient-vertical-sunny);
+}
+
+#gradient-vertical-sunny {
+    --color-stop-1: #AEE11C;
+    --color-stop-2: #85BC0B;
+}
+
+.icon-vgradient-stromy {
+    fill: url(#gradient-vertical-stromy);
+}
+
+#gradient-vertical-stromy {
+    --color-stop-1: #4e54c8;
+    --color-stop-2: #8f94fb;
+}
+
+.icon-vgradient-cloudy {
+    fill: url(#gradient-vertical-cloudy);
+}
+
+#gradient-vertical-cloudy {
+    --color-stop-1: #ef32d9;
+    --color-stop-2: #89fffd;
+}
+
+.icon-vgradient-snow {
+    fill: url(#gradient-vertical-cloudy);
+}
+
+#gradient-vertical-snow {
+    --color-stop-1: #1c92d2;
+    --color-stop-2: #f2fcfe;
+}
+
+
+#gradient-vertical {
+    --color-stop-1: #00c3ff;
+    --color-stop-2: #77e190;
+    --color-stop-3: #ffff1c;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-description {
+    margin: 0.5rem;
+    display: block;
+    color: #AAAAAA;
+    font-size: 0.95rem;
+}
+
+.main {
+    margin: 18px;
+}
+
+#bgGlass {
+    background: rgba(184, 184, 184, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
