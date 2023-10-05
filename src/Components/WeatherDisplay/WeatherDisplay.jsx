@@ -13,7 +13,7 @@ export const WeatherDisplay = ({ data }) => {
 
     const days = data["list"];
 
-    const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const daysOfWeek = ["الأحد", "الأثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
     const today = new Date().getDay();
 
     return (
@@ -33,7 +33,7 @@ export const WeatherDisplay = ({ data }) => {
                                     {description}
                                 </h3>
                                 <h4>
-                                    <span id="humidity">{parseInt(humidity)}%</span> <i className="wi wi-humidity"></i> Humidity
+                                    <span id="humidity">{parseInt(humidity)}%</span> <i className="wi wi-humidity"></i> الرطوبة
                                 </h4>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ export const WeatherDisplay = ({ data }) => {
                                                 <div className="display-5">{parseInt(day["temp"]["day"])}°</div>
                                             </div>
                                             <div className="col-6 text-end">
-                                                <div className="reading">{daysOfWeek[today + index]}</div>
+                                                <div className="reading">{daysOfWeek[(today + index) % 7]}</div>
                                             </div>
                                         </div>
                                         <div className="row main">
@@ -62,7 +62,7 @@ export const WeatherDisplay = ({ data }) => {
                                         <div className="row foot mb-4">
                                             <div className="col-6">
                                                 <div className="reading">
-                                                    <span className="humidity-value">Humidity {day["humidity"]}% </span>
+                                                    <span className="humidity-value">الرطوبة %{day["humidity"]} </span>
                                                 </div>
                                             </div>
                                             <div className="col-6 text-end">
